@@ -3,10 +3,15 @@ import { Form } from "semantic-ui-react";
 import ButtonSaveOrCancel from "./ButtonSaveOrCancel";
 import EntryForm from "./EntryForm";
 
-const NewEntryForm = ({ addEntry }) => {
-  const [description, setDescription] = useState("");
-  const [value, setValue] = useState("");
-  const [isExpense, setIsExpense] = useState(true);
+const NewEntryForm = ({
+  addEntry,
+  description,
+  setDescription,
+  isExpense,
+  setIsExpense,
+  value,
+  setValue,
+}) => {
   return (
     <Form unstackable>
       <EntryForm
